@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": false,
+        "declaration": true,
+        "downlevelIteration": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "target": "es5",
+        "module": "es6",
+        "strict": false,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "jsx": "react",
+        "lib": ["dom", "es5", "es2015", "es6", "es2017", "es2016.array.include"],
+        "declarationDir": "dist",
+        "outDir": "dist"
+    },
+    "include": [
+      "src/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}

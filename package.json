@@ -1,0 +1,35 @@
+{
+  "name": "tplus-mobile-attach",
+  "version": "1.0.23",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "init": "node node_modules/mutants-devtools/bin/init",
+    "test": "set DEBUG=mutants:*,-not_this && mocha",
+    "start": "cross-env DEV_ENV=mobile node node_modules/mutants-devtools/bin/start",
+    "start_chanjet": "cross-env DEV_ENV=mobile CONTAINER_ENV=chanjet node node_modules/mutants-devtools/bin/start",
+    "build": "rm -rf dist && node node_modules/mutants-devtools/bin/build",
+    "pub": "npm run build && npm publish --registry https://registry.npmjs.org"
+  },
+  "author": "zhaoxianh@chanjet.com",
+  "license": "ISC",
+  "devDependencies": {
+    "antd-mobile": "^2.3.1",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.2",
+    "mutants-devtools": "^2.0.3",
+    "vconsole": "^3.3.4"
+  },
+  "dependencies": {
+    "mutants-microfx": "^1.0.1",
+    "tplus-mobile-jsbridge": "^1.0.26",
+    "tplus-mobile-navigator": "^1.0.61"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

@@ -1,0 +1,54 @@
+.attachment-container{
+    .Head {
+        display: flex;
+        padding: 7px 0px 7px 16px;
+        .title {
+            padding-right: 15px;
+            color: #333333;
+        }
+    }
+    .am-image-picker{
+        background-color: #FFFFFF;
+        padding: 6px 0px;
+        .am-image-picker-list{
+            padding: 8px 8px 0px 8px;
+            .am-flexbox{
+                margin-bottom: 16px !important;
+                .am-flexbox-item {
+                    margin-top: 8px !important;
+                    margin-right: 8px !important;
+                    margin-left: 8px !important;
+                    .am-image-picker-item-content{
+                        border-radius: 4px;
+                        object-fit: cover;
+                    }
+                    .am-image-picker-item-remove{
+                        right: -3px !important;
+                        top: -3px !important;
+                        background-image: url(https://newretail-static-pro-bj.oss-cn-beijing.aliyuncs.com/icon/mobile/attach/shanchu.png) !important;
+                    }
+                    .am-image-picker-upload-btn{
+                        background-image: url(https://newretail-static-pro-bj.oss-cn-beijing.aliyuncs.com/icon/mobile/attach/xiangji.png) !important;
+                        background-repeat: no-repeat !important;
+                        background-position: center !important;
+                        background-size: 23px 20px;
+                        &::before {
+                            content: "";
+                            width: 0 !important;
+                            height: 0 !important;
+                        }
+                        &::after {
+                            content: "" !important;
+                            width: 0 !important;
+                            height: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .am-list-header{
+        padding: 7px 0px 7px 16px !important;
+        color: #333333;
+    }
+}
