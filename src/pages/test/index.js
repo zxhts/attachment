@@ -12,6 +12,7 @@ class Test extends Component  {
     super(props);
     if(location.href.indexOf('appId')>-1&&location.href.indexOf('ext')>-1){
       console.log('appParam=======',getSourceAppParam());
+      console.log(1111);
     }
   }
 
